@@ -24,7 +24,7 @@ const Navbar = ({toggle}) => {
                 <NavLinks to="about">About</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="contact">Contact</NavLinks>
+                <NavLinks to="resume">Resume</NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks to="projects">Projects</NavLinks>
