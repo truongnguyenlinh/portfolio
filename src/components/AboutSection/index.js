@@ -13,7 +13,7 @@ const AboutSection = () => {
         </ImgWrap>
         <AboutP>
           I'm currently in my last semester as a computer science student at the 
-          British Columbia Institute of Technology. {"\n"}
+          British Columbia Institute of Technology. {'\n\n'}
           
           I just recently completed an 8-month co-op term at SAP, and have now started 
           working with Technovation as a Student Mentor, for girls aged 10-18 who are 

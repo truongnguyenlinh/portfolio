@@ -15,7 +15,7 @@ const Navbar = ({toggle}) => {
       <>
         <Nav>
           <NavbarContainer>
-            <NavLogo to="/">Linh Truong</NavLogo>
+            <NavLogo to="about">Linh Truong</NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars/>
             </MobileIcon>

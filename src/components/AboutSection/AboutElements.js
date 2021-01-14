@@ -40,6 +40,7 @@ export const AboutP = styled.p`
   font-size: 24px;
   text-align: left;
   max-width: 600px;
+  white-space: pre-line;
 
   @media screen and (max-width: 768px) {
     font-size: 24px;
