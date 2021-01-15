@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const AboutContainer = styled.div`
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,7 +38,7 @@ export const AboutH1 = styled.h1`
 export const AboutP = styled.p`
   margin-top: 24px;
   color: #000;
-  font-size: 24px;
+  font-size: 1.3rem;
   text-align: left;
   max-width: 600px;
   white-space: pre-line;
@@ -58,7 +59,9 @@ export const ImgWrap = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 100%;
+  max-width: 75px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
 `;
 
 export const VideoWrap = styled.div`
@@ -70,4 +73,11 @@ export const VideoWrap = styled.div`
 export const Video = styled.video`
   width: 100%;
   max-width: 203px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+`;
+
+export const AssetsWrap = styled.div`
+  display: flex;
+  flex-direction: inline-block;
 `;

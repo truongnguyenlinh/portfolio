@@ -4,16 +4,15 @@ import { Link as LinkS } from "react-scroll";
 
 
 export const Nav = styled.nav`
-  background: #f9f9f9;
+  background: ${({scrollNav}) => (scrollNav ? '#f9f9f9' : 'transparent')};
   height: 80px;
-  // margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
   position: sticky;
-  top:0;
-  z-index:10;
+  top: 0;
+  z-index: 10;
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
