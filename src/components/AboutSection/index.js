@@ -1,8 +1,8 @@
 import React from 'react'
 import { AboutContainer, AboutContent, 
-AboutH1, AboutP, ImgWrap, Img, VideoWrap, Video, AssetsWrap} from './AboutElements';
+AboutH1, AboutP, ImgWrap, Img, AssetsWrap, GifWrap, Gif} from './AboutElements';
 import img from "../../../src/images/hi.png";
-import vid from "../../../src/videos/memoji.mp4"
+import gif from "../../../src/images/memoji.gif";
 
 const AboutSection = () => {
   return (
@@ -14,9 +14,12 @@ const AboutSection = () => {
             <ImgWrap>
               <Img src={img} alt="Text Bubble"/>
             </ImgWrap>
-            <VideoWrap>
+            {/* <VideoWrap>
               <Video autoPlay loop muted src={vid} type="video/mp4"/>
-            </VideoWrap>
+            </VideoWrap> */}
+            <GifWrap>
+              <Gif src={gif} alt="Memoji Gif"/>
+            </GifWrap>
           </AssetsWrap>
           <AboutP>
             I'm currently in my last semester as a computer science student at the 

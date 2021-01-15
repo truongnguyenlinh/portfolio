@@ -64,13 +64,13 @@ export const Img = styled.img`
   padding: 0 0 0 0;
 `;
 
-export const VideoWrap = styled.div`
+export const GifWrap = styled.div`
   max-width: 500px;
   height: auto;
   justify-content: center;
 `;
 
-export const Video = styled.video`
+export const Gif = styled.img`
   width: 100%;
   max-width: 203px;
   margin: 0 0 0 0;
