@@ -60,3 +60,14 @@ export const ImgWrap = styled.div`
 export const Img = styled.img`
   width: 100%;
 `;
+
+export const VideoWrap = styled.div`
+  max-width: 500px;
+  height: auto;
+  justify-content: center;
+`;
+
+export const Video = styled.video`
+  width: 100%;
+  max-width: 203px;
+`;

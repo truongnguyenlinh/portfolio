@@ -1,16 +1,20 @@
 import React from 'react'
 import { AboutContainer, AboutContent, 
-AboutH1, AboutP, ImgWrap, Img} from './AboutElements';
+AboutH1, AboutP, ImgWrap, Img, VideoWrap, Video} from './AboutElements';
 import img1 from "../../../src/images/memoji.png";
+import vid from "../../../src/videos/memoji.mp4"
 
 const AboutSection = () => {
   return (
     <AboutContainer id="about">
       <AboutContent>
         <AboutH1>Hi, I'm Linh!</AboutH1>
-        <ImgWrap>
+        {/* <ImgWrap>
           <Img src={img1} alt="Memoji of Linh"/>
-        </ImgWrap>
+        </ImgWrap> */}
+        <VideoWrap>
+          <Video autoPlay loop muted src={vid} type="video/mp4"/>
+        </VideoWrap>
         <AboutP>
           I'm currently in my last semester as a computer science student at the 
           British Columbia Institute of Technology. {'\n\n'}
