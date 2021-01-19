@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
+import Typical from 'react-typical';
 import { animateScroll as scroll} from 'react-scroll';
 import resume from "../../../src/files/resume.pdf";
 import {
@@ -35,7 +36,11 @@ const Navbar = ({toggle}) => {
       <>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
-            <NavLogo to="/" onClick={toggleHome}>Linh Truong</NavLogo>
+            <NavLogo to="/" onClick={toggleHome}>
+              <Typical
+              steps={[1500, "Linh Truong", 1000]}
+              loop={Infinity}/>
+            </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars/>
             </MobileIcon>
