@@ -8,8 +8,6 @@ import {
   SidebarLink 
 } from './SidebarElements';
 import resume from "../../../src/files/resume.pdf";
-import { animateScroll as scroll} from 'react-scroll';
-
 
 const Sidebar = ({ isOpen, toggle }) => {
   const [scrollSidebar, setScrollSidebar] = useState(false);
@@ -45,7 +43,7 @@ const Sidebar = ({ isOpen, toggle }) => {
               About
             </SidebarLink>
             <SidebarLink 
-            to="project1" 
+            to="projects" 
             onClick={toggle}
             smooth={true} 
             duration={500} 
