@@ -23,26 +23,24 @@ const AboutSection = () => {
             Hi, I'm{' '}
             <Typical
                 fontWeight="normal"
-                loop={Infinity}
                 wrapper="b"
                 steps={[
                   1000,
                   "Linh!", 
                   1000, 
                   "a student 📚", 
-                  1000, 
-                  "a motorcyclist 🏍️",
                   1000,
-                  "a dog lover 🐶",
+                  "a developer 💻",
                   1000,
-                  "a developer 💻"]}/>
+                  "Linh!"
+                ]}/>
           </AboutH1>
           <AssetsWrap>
             <ImgWrap>
-              <Img src={img} alt="Text bubble that says 'Hi'."/>
+              <Img src={img} alt="Text bubble that says 'Hi'"/>
             </ImgWrap>
             <GifWrap>
-              <Gif src={gif} alt="Memoji gif of Linh."/>
+              <Gif src={gif} alt="Memoji gif of Linh"/>
             </GifWrap>
           </AssetsWrap>
           <AboutP>
