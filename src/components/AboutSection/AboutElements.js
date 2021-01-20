@@ -44,11 +44,11 @@ export const AboutP = styled.p`
   white-space: pre-line;
 
   @media screen and (max-width: 768px) {
-    font-size: 24px;
+    font-size: 18px;
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 18px;
+    font-size: 16px;
   }
 `;
 
