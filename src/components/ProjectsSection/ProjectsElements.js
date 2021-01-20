@@ -1,100 +1,68 @@
 import styled from 'styled-components';
 
 export const ProjectsContainer = styled.div`
-  background-color: #ebebeb;
+  background: #000;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 5rem calc((100vw - 13000px) / 2);
+  color: #FFF;
+`;
+
+export const ProjectsHeader = styled.h2`
+  color: #FFF;
+  font-size: clamp(2rem, 2.5vw, 3rem);
+  text-align: center;
+  margin-bottom: 5rem;
 
   @media screen and (max-width: 768px) {
-    padding: 100px 0;
+    font-size: 32px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 28px;
   }
 `;
 
 export const ProjectsWrapper = styled.div`
-  display: grid;
-  z-index: 1;
-  height: 800px;
-  width: 100%;
-  max-width: 1100px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 24px;
-  justify-content: center;
-`;
-
-export const ProjectsRow = styled.div`
-  display: grid;
-  grid-template-columns: minmax(250px, 60%) auto;
-  align-items: center;
-  grid-template-areas: 'col2 col1';
-
-  @media screen and (max-width: 768px) {
-    grid-template-areas: "'col1' 'col2'";
-  }
-`;
-
-export const Column1 = styled.div`
-  margin-bottom: 15px;
-  padding: 0 15px;
-  grid-area: col1
-`;
-
-export const Column2 = styled.div`
-  margin-bottom: 15px;
-  padding: 0 15px;
-  grid-area: col2
-
-  @media screen and (max-width: 768px) {
-    width:400px;
-  }
-`;
-
-export const TextWrapper = styled.div`
-  max-width: 540px;
-  padding-top: 0;
-  padding-bottom: 60px;
-`;
-
-export const TopLine = styled.p`
-  color: #000;
-  font-size 16px
-  line-height: 16px;
-  font-weight: 700;
-  letter-space: 1.4px;
-  text-transform: uppercase;
-  margin-bottom: 16px
-`;
-
-export const Heading = styled.h1`
-  margin-bottom: 24px;
-  font-size: 48px;
-  line-height: 1.1;
-  font-weight: 600;
-  color: #000;
-
-  @media screen and (max-width: 480px) {
-    font-size: 32px;
-  }
-`
-
-export const Description = styled.p`
-  max-width: 440px;
-  margin-bottom: 35px;
-  font-size: 18px;
-  line-height: 24px;
-  color: #000;
-`;
-
-export const BtnWrap = styled.div`
   display: flex;
-  justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
 `;
 
-export const ImgWrap = styled.div`
-  max-width: 555px;
-  height: 100%
+export const ProjectCard = styled.div`
+  margin: 0 2rem;
+  line-height: 2;
+  width: 300px;
 `;
 
-export const Img = styled.img`
-  width: 100%;
-  margin: 0 0 10 0;
-  padding-right: 0;
+export const ProjectImgLink = styled.a`
+  color: #FFF;
+  font-size: 24px;
+  text-decoration: none;
+`;
+
+export const ProjectImg = styled.img`
+  height: 300px;
+  min-width: 300px;
+  max-width: 100%;
+  box-shadow: 5px 5px #8f8f8f;
+`;
+
+export const ProjectTitle = styled.h3`
+  font-weight: 400;
+  font-size: 1.5rem;
+`;
+
+export const ProjectInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+`;
+
+export const ProjectDesc = styled.p`
+  margin-bottom: 1rem;
 `;

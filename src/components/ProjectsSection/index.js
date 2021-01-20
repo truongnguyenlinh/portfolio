@@ -1,38 +1,36 @@
 import React from 'react';
 import { 
   ProjectsContainer, 
-  ProjectsWrapper, 
-  Column2, 
-  ImgWrap,
-  ProjectsRow, 
-  Column1, 
-  TextWrapper, 
-  TopLine, 
-  Heading, 
-  Description,  
-  Img 
+  ProjectsHeader, 
+  ProjectsWrapper,
+  ProjectCard,
+  ProjectImgLink,
+  ProjectImg,
+  ProjectInfo,
+  ProjectTitle,
+  ProjectDesc 
 } from "./ProjectsElements";
 
-const ProjectsSection = ({id, imgStart, topLine, headline, description, img, alt}) => {
+const ProjectsSection = ({heading, data}) => {
   return (
     <>
-      <ProjectsContainer id={id}>
+      <ProjectsContainer id="projects">
+        <ProjectsHeader>{heading}</ProjectsHeader>
         <ProjectsWrapper>
-          <ProjectsRow imgStart={imgStart}>
-            <Column1>
-              <TextWrapper>
-                <TopLine>{topLine}</TopLine>
-                <Heading>{headline}</Heading>
-                <Description>{description}</Description>
-              </TextWrapper>
-            </Column1> 
-            <Column2>
-              <ImgWrap>
-                <Img src={img} alt={alt}></Img>
-              </ImgWrap>
-            </Column2>
-          </ProjectsRow> 
-        </ProjectsWrapper> 
+          {data.map((project, index) => {
+            return(
+              <ProjectCard key={index}>
+                <ProjectImgLink href={project.link}>
+                  <ProjectImg src={project.img} alt={project.alt}/>
+                </ProjectImgLink>
+                <ProjectInfo>
+                  <ProjectTitle>{project.name}</ProjectTitle>
+                  <ProjectDesc>{project.description}</ProjectDesc>
+                </ProjectInfo>
+              </ProjectCard>
+            )
+          })}
+        </ProjectsWrapper>
       </ProjectsContainer>
     </>
   )
