@@ -1,47 +1,50 @@
 import styled from 'styled-components';
 
 export const FooterContainer = styled.footer`
-  background-color: #FFF;
-`;
-
-export const FooterWrap = styled.div`
-  padding: 16px 24px;
-  display: flex;
-  flex-direction: column;
+  grid-column: 2 / span 12;
+  min-height: 11.25rem;
+  background-color: #f9f9f9;
   justify-content: center;
-  align-items: center;
-  max-width: 1300px;
-  margin: 0 auto;
-`;
-
-export const SocialMedia = styled.section`
-  max-width: 1300px;
-  width: 100%;
-`;
-
-export const SocialMediaWrap = styled.div`
+  align-items: flex-start;
+  padding: 3rem 0;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 950px;
-  margin: 16px auto 0 auto;
-  float: right;
 
   @media screen and (max-width: 820px) {
-    flex-direction: column;
+    grid-column: 2 / span 6;
   }
 `;
 
-export const SocialIcons = styled.div`
+export const FooterSocialWrapper = styled.div`
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
-  width: 240px;
-  
+  text-align: center;
+
+  & p {
+    text-align: center;
+    flex: 0 0 100%;
+  }
+`;
+
+export const FooterSocialIcons = styled.div`
+  flex: 0 0 100%;
+  margin-bottom: 1.5rem;
+
+  & a {
+    transition: filter 0.3s ease;
+    margin-right: 10px;
+  }
+
+  & a:hover, a:focus {
+    filter: brightness(50%);
+  }
 `;
 
 export const SocialIconLink = styled.a`
   color: #000;
   font-size: 24px;
-  line-height: inherit!important;
+`;
+
+export const FooterText = styled.p`
+  font-size: .8rem;
 `;
