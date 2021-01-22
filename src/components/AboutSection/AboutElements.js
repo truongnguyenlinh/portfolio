@@ -38,17 +38,17 @@ export const AboutH1 = styled.h1`
 export const AboutP = styled.p`
   margin-top: 24px;
   color: #000;
-  font-size: 1.3rem;
+  font-size: 18px;
   text-align: left;
   max-width: 600px;
   white-space: pre-line;
 
   @media screen and (max-width: 768px) {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 16px;
+    font-size: 14px;
   }
 `;
 
