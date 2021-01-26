@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ProjectsContainer = styled.div`
-  background: #000;
+  background: #FFF;
   width: 100%;
   min-height: 100vh;
   padding: 5rem calc((100vw - 13000px) / 2);
@@ -9,7 +9,7 @@ export const ProjectsContainer = styled.div`
 `;
 
 export const ProjectsHeader = styled.h2`
-  color: #FFF;
+  color: #000;
   font-size: clamp(2rem, 2.5vw, 3rem);
   text-align: center;
   margin-bottom: 5rem;
@@ -37,7 +37,7 @@ export const ProjectCard = styled.div`
 `;
 
 export const ProjectImgLink = styled.a`
-  color: #FFF;
+  color: #000;
   font-size: 24px;
   text-decoration: none;
 `;
@@ -52,6 +52,7 @@ export const ProjectImg = styled.img`
 export const ProjectTitle = styled.h3`
   font-weight: 400;
   font-size: 1.5rem;
+  color: #000;
 `;
 
 export const ProjectInfo = styled.div`
@@ -61,8 +62,10 @@ export const ProjectInfo = styled.div`
   align-items: center;
   padding: 2rem;
   text-align: center;
+  color: #000;
 `;
 
 export const ProjectDesc = styled.p`
   margin-bottom: 1rem;
+  color: #000;
 `;
