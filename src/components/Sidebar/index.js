@@ -52,7 +52,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             offset={-80}>
               Projects
             </SidebarLink>
-            <SidebarLink to="route" onClick={(event) => { event.preventDefault(); window.open(resume, "_self");}}>
+            <SidebarLink to="route" onClick={() => { window.open(resume, "_blank"); }}>
               Resume
             </SidebarLink>
           </SidebarMenu>
