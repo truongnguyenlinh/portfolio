@@ -12,7 +12,7 @@ import {
 } from './AboutElements';
 import Typical from 'react-typical';
 import img from "../../../src/images/hi.png";
-import gif from "../../../src/images/memoji.gif";
+import img2 from "../../../src/images/memoji.png";
 
 const AboutSection = () => {
   return (
@@ -40,7 +40,7 @@ const AboutSection = () => {
               <Img src={img} alt="Text bubble that says 'Hi'"/>
             </ImgWrap>
             <GifWrap>
-              <Gif src={gif} alt="Memoji gif of Linh"/>
+              <Gif src={img2} alt="Memoji gif of Linh"/>
             </GifWrap>
           </AssetsWrap>
           <AboutP>
